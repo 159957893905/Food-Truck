@@ -1,0 +1,10 @@
+version: '3'
+services:
+  food-truck:
+    build:
+      context: ./
+    ports:
+      - 8080:8080
+    container_name: food-truck
+    hostname: food-truck
+    image: food-truck
