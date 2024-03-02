@@ -22,7 +22,7 @@ Easyexcel 3.3.3
 # 快速运行(H5) Quick Start (H5)
 ```shell script
 # 1. 下载并切换到项目根目录 Download and navigate to the project root directory  
-git clone https://gitee.com/log4j/pig.git && cd food-truck
+git clone https://github.com/159957893905/Food-Truck.git && cd food-truck
 
 # 2. 编译 Compilation  
 # 这里前端选择的是编译成H5代码(build:h5), 也可以支持编译成微信小程序(build:weapp)、百度小程序(build:swan)、支付宝小程序(build:alipay)等多个平台 
