@@ -22,12 +22,12 @@ Easyexcel 3.3.3
 # 快速运行(H5) Quick Start (H5)
 ```shell script
 # 1. 下载并切换到项目根目录 Download and navigate to the project root directory  
-git clone https://github.com/159957893905/Food-Truck.git && cd food-truck
+git clone https://github.com/159957893905/Food-Truck.git && cd ./Food-Truck
 
 # 2. 编译 Compilation  
 # 这里前端选择的是编译成H5代码(build:h5), 也可以支持编译成微信小程序(build:weapp)、百度小程序(build:swan)、支付宝小程序(build:alipay)等多个平台 
 # The frontend is compiled into H5 code (build:h5) by default, but it also supports compilation for multiple platforms such as WeChat Mini Programs (build:weapp), Baidu Mini Programs (build:swan), and Alipay Mini Programs (build:alipay)  
-npm run build:h5 --prefix web && mvn clean install -DskipTests=true  
+npm install -p web && npm run build:h5 --prefix web && mvn clean install -DskipTests=true  
 
 # 3. Docker部署 Docker Deployment
 docker-compose build && docker-compose up -d --force-recreate
@@ -37,6 +37,6 @@ docker-compose build && docker-compose up -d --force-recreate
 # After the container starts, wait for approximately 1 minute for the Java service to initialize before accessing  
 http://localhost:8080/
 ```
-请注意，以上假设您已经安装了必要的开发工具（如Node.js、npm、Java、Maven、Docker等）
+请注意，以上假设您已经安装了必要的开发工具（如Node.js、npm、Java、Maven、Docker等）, 并且如果用的是PowerShell则需要将以上指令中的``&&``改为``;``
 
 Please note that the above instructions assume you have already installed the necessary development tools such as Node.js, npm, Java, Maven, and Docker.
